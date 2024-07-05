@@ -1,0 +1,191 @@
+/* Main font for headings */
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Pacifico', cursive;
+}
+
+/* Subfont for body text */
+body, .nav-link, p, li, button, input, textarea, .btn {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* body {
+    background-color: #ffe4e1; /* Soft pink background */
+} */
+
+/* General styles for the navbar */
+.navbar {
+    background-color: #ffe4e1; /* Light pink background */
+    border-bottom: 3px solid #ff69b4 !important; /* Pink border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Navbar brand/logo styles */
+.navbar-brand {
+    color: #ff1493 !important; /* Hot pink color */
+}
+
+/* Navbar link styles */
+.nav-link {
+    color: black !important; /* Black color */
+    transition: color 0.3s ease-in-out;
+    font-weight: normal;
+}
+
+/* Navbar link hover styles */
+.nav-link:hover {
+    color: #ff1493 !important; /* Hot pink on hover */
+}
+
+/* Navbar toggler icon color */
+.navbar-toggler {
+    border-color: #ff69b4; /* Pink border */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 105, 180, 1%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Pink hamburger icon */
+}
+
+.navbar.navbar-light {
+    border-bottom: 3px solid #ff69b4; /* Pink border */
+    background-color: snow;
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    background: url('images/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 80px 20px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05); /* Darker overlay */
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero .btn {
+    background-color: #ff69b4;
+    border: none;
+}
+
+.hero .btn:hover {
+    background-color: #ff1493;
+}
+
+/* Carousel styles */
+.carousel-item img {
+    border-radius: 15px;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.carousel-indicators button {
+    background-color: #ff1493;
+}
+
+/* Card styles */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    border-bottom: 2px solid #ff69b4;
+}
+
+.card-body {
+    background-color: #fff;
+}
+
+.card-title {
+    color: #ff1493;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #ffe4e1;
+    padding: 20px 0;
+    color: #ff1493;
+    border-top: 3px solid #ff1493;
+}
+
+.footer h5 {
+    font-weight: bold;
+    color: #ff1493;
+}
+
+.footer p {
+    color: #ff69b4;
+}
+
+.footer a {
+    color: #ff1493;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Utility classes */
+.text-pink {
+    color: #ff69b4 !important;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .carousel-item img {
+        max-height: 300px;
+    }
+
+    .navbar-collapse {
+        background-color: #ffe4e1;
+    }
+
+    .navbar-toggler {
+        margin-right: 10px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .carousel-item img {
+        max-height: 200px;
+    }
+}
+
+h2 {
+    color: #ff1493;
+}

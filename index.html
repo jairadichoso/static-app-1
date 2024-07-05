@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanrio Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sanrio Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav text-uppercase fw-bold">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center mb-4">
+        <div class="container px-4 py-5">
+            <h1 class="display-4">Welcome to Sanrio Shop</h1>
+            <p class="lead">Discover your favorite Sanrio character merchandise.</p>
+            <a href="#" class="btn btn-primary btn-lg">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Carousel Section with Text -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <!-- Carousel -->
+                <div id="sanrioCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <!-- <ol class="carousel-indicators">
+                        <li data-bs-target="#sanrioCarousel" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#sanrioCarousel" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#sanrioCarousel" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#sanrioCarousel" data-bs-slide-to="3"></li>
+                    </ol> -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/sanrio1.jpg" class="d-block w-100 img-fluid" alt="Sanrio 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/sanrio2.jpg" class="d-block w-100 img-fluid" alt="Sanrio 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/sanrio3.jpg" class="d-block w-100 img-fluid" alt="Sanrio 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/sanrio4.jpg" class="d-block w-100 img-fluid" alt="Sanrio 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/sanrio5.jpg" class="d-block w-100 img-fluid" alt="Sanrio 5">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/sanrio6.jpg" class="d-block w-100 img-fluid" alt="Sanrio 6">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#sanrioCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#sanrioCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <!-- Text Content -->
+                <div class="text-center text-md-left px-3">
+                    <h2 class="mb-4">Sanrio Shop</h2>
+                    <p>Your one-stop shop for all things Sanrio. Explore our wide range of merchandise and bring joy to your life with your favorite characters.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Cards -->
+    <div class="container py-5">
+        <h2 class="text-center mb-4">Featured Products</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/product1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Hello Kitty Plush</h5>
+                        <p class="card-text">After all, it's all about the blue overall. This super soft plush features Hello Kitty in her original blue overalls from when she made her initial debut. Finished with embroidery and resin eyes, she's the perfect plush for any Hello Kitty fan. Whether you keep her on the couch, on a shelf, or tucked into bed, Hello Kitty's a friend to all.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">New Arrival</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/product2.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Keroppi Mug</h5>
+                        <p class="card-text">Seeing green? Enjoy your morning cup with Keroppi by your side! Great for big cups of coffee, hot cocoa or tea. You can even use it to hold pens, markers or any other items that need organizing. It’s sure to brighten your daily drink ritual or a Keroppi fan in your life!</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Best Seller</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/product3.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Cinnamoroll Signature Keychain</h5>
+                        <p class="card-text">Oh, baby! Rep your favorite Sanrio characters as baby versions of themselves, dressed in the cutest matching onesies! These keychains feature a molded mascot and loop featuring their name in a coordinating color. All connected on a gold lobster clasp keyring, it's easy to attach and remove wherever you choose.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Limited Edition</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-light text-center text-lg-start">
+            <div class="text-center p-3">
+                © 2024 Sanrio Shop. All rights reserved.
+            </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
